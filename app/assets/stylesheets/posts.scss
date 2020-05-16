@@ -55,8 +55,11 @@
     font-size: 20px;
     & ul{
       display: flex;
+      font-size: 50px;
       & li{
       list-style: none;
+      padding-right: 50px;
+      font-size: 20px;
       }
     }
   }
