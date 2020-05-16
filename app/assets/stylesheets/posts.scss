@@ -53,15 +53,9 @@
   font-size: 20px;
   &-lists{
     font-size: 20px;
-    & ul{
-      display: flex;
-      font-size: 50px;
-      margin-left: 180px;
-      & li{
-      list-style: none;
-      padding-right: 150px;
-      font-size: 20px;
-      }
-    }
   }
+}
+.fas{
+  padding-left: 100px;
+  font-size: 30px;
 }
