@@ -7,8 +7,10 @@
           .title-description 誰でも手軽にオンライン読者会
         .main_header-navigation
           %ul.headerUl
-            %li 新規会員登録
-            %li ログイン
+            %li 
+            = link_to "新規会員登録",new_user_registration_path, class: 'login_button',type: 'submit'
+            %li 
+            = link_to "ログイン", new_user_session_path, class: 'new_user_buton',type: 'submit'
             %li 読書する
             %li 最新Bookランキング
     .main_image 
