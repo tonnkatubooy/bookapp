@@ -1,6 +1,7 @@
 .body
-  = current_user.name
   .main#main
+    = current_user.name 
+    さんこんにちは
     .main_header
       .main_header-table
         .main_header-table-title
@@ -8,12 +9,15 @@
           .title-description 誰でも手軽にオンライン読者会
         .main_header-navigation
           %ul.headerUl
-            %li 
-            = link_to "新規会員登録",new_user_registration_path, class: 'login_button',type: 'submit'
-            %li 
-            = link_to "ログイン", new_user_session_path, class: 'new_user_buton',type: 'submit'
-            %li 読書する
-            %li 最新Bookランキング
+            - if user_signed_in? && current_user
+              = link_to "ログアウト", destroy_user_session_path, method: :delete
+              = link_to "マイページ", user_path(current_user)
+            - else
+              = link_to "ログイン", new_user_session_path, class: 'new_user_buton',type: 'submit'
+              = link_to "新規会員登録",new_user_registration_path, class: 'login_button',type: 'submit'
+            .groupBtn
+              = link_to "読書する"
+              = link_to "最新本ランキング"
     .main_image 
       %h2 読書好きのあなたのために
     .Explanation
