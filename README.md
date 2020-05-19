@@ -35,5 +35,7 @@
 <br>
 
 ## 作者
-伊勢谷　将太　[github]https://github.com/tonnkatubooy
+<br>
+
+伊勢谷　将太　[github](https://github.com/tonnkatubooy)
 
