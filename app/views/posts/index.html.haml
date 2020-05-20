@@ -1,7 +1,8 @@
 .body
   .main#main
-    = current_user.name 
-    さんこんにちは
+    - if user_signed_in? && current_user
+      = current_user.name 
+      さんこんにちは
     .main_header
       .main_header-table
         .main_header-table-title
