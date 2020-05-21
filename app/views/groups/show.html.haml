@@ -1,0 +1,6 @@
+.group_name
+  = @group.name
+  %h2 メンバー一覧
+  .memberLists
+    - @group.users.each do |user|
+      = user.name
