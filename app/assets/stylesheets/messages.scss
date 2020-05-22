@@ -1,7 +1,12 @@
+.message{
+}
+
 .form{
   background-color: #d2d2d2;
   padding: 20px 40px;
   height: 90px;
+  margin-top: 500px;
+  margin-bottom: 0;
   .new_message{
     display: flex;
     .input-box{
