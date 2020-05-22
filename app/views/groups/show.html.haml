@@ -5,5 +5,11 @@
     - @group.users.each do |user|
       = user.name
   .message_form    
-    = form_for @group do |f|
-      = f.text_field :name, class: "chat-group-form__input", placeholder: "グループ名を入力してください"
+    .form
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = icon('fas', 'image', class: 'icon')
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
