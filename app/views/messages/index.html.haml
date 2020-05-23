@@ -1,7 +1,9 @@
 .message
-  .group_name
-    = @group.name
-    %h2 メンバー一覧
+  .group
+    .group_box
+      .group_name
+        = @group.name
+      %h3 メンバー一覧
     .memberLists
       - @group.users.each do |user|
         = user.name
