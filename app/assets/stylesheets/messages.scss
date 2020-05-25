@@ -1,8 +1,18 @@
 .message{
   margin: 40px 60px;
 }
-.group{
+.group_box{
+  display: flex;
+  border: solid;
+  height: 50px;
+}
 
+.group_name{
+  color: plum;
+  font-size: 20px;
+}
+.memberLists{
+  display: none;
 }
 
 .form{
@@ -46,3 +56,6 @@
 * {
   box-sizing: border-box;
 }
+// .fa-users{
+//   color: pink;
+// }

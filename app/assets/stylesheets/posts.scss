@@ -23,12 +23,19 @@
 .title-description{
   color: gray;
 }
-.headerUl{
+.headerUl {
   display: flex;
   float: right;
   margin-left: 180px;
   margin-top: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  & a{
+    text-decoration: none;
+  }
+}
+.headerUl a:hover{
+  text-decoration: underline;
+  color: #99CC00;
 }
 .main_image{
   background-image: url('cropped-nicole-honeywill-730102-unsplash.jpg');

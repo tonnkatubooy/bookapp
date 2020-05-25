@@ -7,12 +7,12 @@
     .group_box
       .group_name
         = @group.name
-      %h3 メンバー一覧
-    .memberLists
-      - @group.users.each do |user|
-        = user.name
-      .messages
-        = render @messages
+      %i.fas.fa-users
+      .memberLists
+        - @group.users.each do |user|
+          = user.name
+    .messages
+      = render @messages
     .message_form    
       .form
         = form_for [@group, @message] do |f|
@@ -22,3 +22,6 @@
               = icon 'fas', 'image'
               = f.file_field :image, class: "input-box__image__file"
           = f.submit 'Send', class: 'form__submit'
+%script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"}
+:javascript
+  
