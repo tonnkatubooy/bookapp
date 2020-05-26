@@ -18,7 +18,8 @@
               = link_to "新規会員登録",new_user_registration_path, class: 'login_button',type: 'submit'
             .groupBtn
             - if user_signed_in? && groups_path
-              = link_to "部屋に入る",group_messages_path(current_user)
+              = link_to "部屋に入る",group_messages_path(current_user),class: "upper"
+              = link_to "部屋を新規作成する",new_group_path, class: "hidden"
             - else
               = link_to "読書する", new_group_path
             = link_to "最新本ランキング"

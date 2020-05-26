@@ -7,7 +7,7 @@
     .group_box
       .group_name
         = @group.name
-      %i.fas.fa-users
+      %i.fas.fa-users#icon
       .memberLists
         - @group.users.each do |user|
           = user.name
