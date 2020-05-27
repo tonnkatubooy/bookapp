@@ -2,3 +2,5 @@
   .main_header-table
     .main_header-table-title
       %h1.headerTitle ONLINE BOOK SHARE
+  - if user_signed_in? && current_user
+    = current_user.name 
