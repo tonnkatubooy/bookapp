@@ -7,7 +7,14 @@
           %ul.headerUl
             .start-btn#start-btn
               = link_to "読書を開始する", class: "start-btn"
-            %p#timer 読書終了まで 
+            %p#timer 読書終了まで
+            %p#display 0:00
+            %button#start スタート
+            %button#stop ストップ
+            %button#reset リセット 
+            -# %br/
+            -# %span#min 分
+            -# %span#sec 秒
   .group
     .group_box
       .group_name
