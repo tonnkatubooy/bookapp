@@ -28,7 +28,7 @@ function count_down() {
     } else {
         time--;
         min = Math.floor(time / 60);
-        sec = Math.floor(time % 60); // senをsecに修正。
+        sec = Math.floor(time % 60); 
 
         display.innerHTML = '0' + min + ':' + ( sec < 10 ? '0' : '') + sec;// 修正、追記。
     }
